@@ -10,9 +10,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
-// mongodb+srv://admin-rizwan:BBq92u2x@cluster0-va0oc.mongodb.net/todoDB?retryWrites=true&w=majority
-
-mongoose.connect('mongodb://localhost:27017/todoDB', {
+mongoose.connect('mongodb+srv://admin-rizwan:BBq92u2x@cluster0-va0oc.mongodb.net/todoDB?retryWrites=true&w=majority', {
 	useNewUrlParser: true,
 	useUnifiedTopology: true
 });
